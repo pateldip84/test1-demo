@@ -6,7 +6,7 @@
       debug:
         msg: I Enjoy Sys Automation
 
-    - name: "Task2 | Print Nodename"
+    - name: "Task2 | Print Nodename and IP Address"
       debug:
         msg: "The Node name is {{ ansible_facts['nodename'] }} and IP address is {{ ansible_all_ipv4_addresses }}"
          
