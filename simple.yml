@@ -2,11 +2,11 @@
 - name: Hello simple message
   hosts: all
   tasks:
-    - name: Print message
+    - name: "Task1 | Automation is Cool"
       debug:
         msg: I Enjoy Sys Automation
 
-    - name: "Ansible | Print Nodename"
+    - name: "Task2 | Print Nodename"
       debug:
         msg: "The Node name is {{ ansible_facts['nodename'] }}"
         
