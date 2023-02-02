@@ -5,5 +5,9 @@
     - name: Print message
       debug:
         msg: I Enjoy Sys Automation
-    - name:
+    - name: Systems name
       command: "uname -a"
+      register: uname
+    - name: Print Hostname
+      debug:
+        msg: uname
