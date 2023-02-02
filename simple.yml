@@ -11,6 +11,6 @@
 #   - name: "Ansible | Print a variable"
 #     debug:
 #       msg: "The operating system is {{ ansible_distribution }}"
-    - name: "Ansible | Print a variable"
+    - name: "Ansible | Print Nodename"
       debug:
-        msg: "The operating system is {{ ansible_facts['nodename'] }}"
+        msg: "The Node name is {{ ansible_facts['nodename'] }}"
