@@ -8,3 +8,6 @@
     - name: "Ansible | Print a variable"
       debug:
         msg: "The operating system is {{ ansible_distribution }}"
+    - name: Print all available facts
+      debug:
+        var: ansible_facts
