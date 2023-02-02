@@ -9,6 +9,7 @@
     - name: "Task2 | Print Nodename"
       debug:
         msg: "The Node name is {{ ansible_facts['nodename'] }}"
+        msg: "The IP address is {{ ansible_all_ipv4_addresses }}"
         
 #    - name: Print all available facts
 #      debug:
