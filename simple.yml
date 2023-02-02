@@ -6,5 +6,4 @@
       debug:
         msg: I Enjoy Sys Automation
     - name:
-      command:
-        uname:
+      command: "uname -a"
