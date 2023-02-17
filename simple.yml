@@ -1,6 +1,6 @@
 ---
 - name: Hello simple message
-  hosts: all
+#  hosts: all
   tasks:
     - name: "Task1 | Automation is Cool"
       debug:
