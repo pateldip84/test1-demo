@@ -1,0 +1,5 @@
+---
+- name: Create a Directory
+  ansible.builtin.file:
+    path: /home/test/test3
+    mode: 755
