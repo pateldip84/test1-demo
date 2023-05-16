@@ -1,5 +1,6 @@
 ---
 - name: Create a Directory
+  tasks:
   ansible.builtin.file:
     path: /home/test/test3
     mode: 755
