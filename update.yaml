@@ -1,0 +1,22 @@
+---
+- name: Update RHEL 9 systems
+  hosts: all
+  become: true
+  gather_facts: yes
+
+  tasks:
+
+    - name: Ensure dnf cache is up to date
+      ansible.builtin.dnf:
+        update_cache: yes
+
+    - name: Update all packages to the latest version
+      ansible.builtin.dnf:
+        name: "*"
+        state: latest
+
+    - name: Reboot if required
+      ansible.builtin.reboot:
+        msg: "Reboot initiated by Ansible after RHEL update"
+        pre_reboot_delay: 10
+      when: ansible_facts.packages is defined
