@@ -1,0 +1,10 @@
+---
+- name: Create a directory on Windows hosts
+  hosts: all
+  gather_facts: false # Optional: Set to true if you need host facts later in the playbook
+
+  tasks:
+    - name: Ensure C:\temp_dir directory exists
+      ansible.windows.win_file:
+        path: "C:\\dipan_dir"
+        state: directory
